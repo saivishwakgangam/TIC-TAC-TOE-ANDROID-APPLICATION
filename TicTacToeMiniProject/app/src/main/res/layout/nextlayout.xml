@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidimage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/exitLayout">
+
+        <TextView
+            android:text="Do You Really Want To Exit??"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button11"
+                android:layout_weight="1"
+                android:onClick="yes" />
+
+            <Button
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                android:layout_weight="1"
+                android:onClick="no" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nextLayout">
+
+        <Button
+            android:text="New Game"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="137dp"
+            android:id="@+id/button"
+            android:textSize="30sp"
+            android:onClick="newgame" />
+
+        <Button
+            android:text="About"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:textSize="30sp"
+            android:onClick="about" />
+
+        <Button
+            android:text="EXIT"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:id="@+id/button3"
+            android:textSize="30sp"
+            android:onClick="exit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

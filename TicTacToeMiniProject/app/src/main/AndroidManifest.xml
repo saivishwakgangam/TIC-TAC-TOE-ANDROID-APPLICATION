@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saivishwak.tictactoeminiproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NextActivity" />
+        <activity android:name=".SingleMulti" />
+        <activity android:name=".About" />
+        <activity android:name=".TwoPlayer" />
+        <activity android:name=".TwoPlayerGame" />
+        <activity android:name=".Result" />
+        <activity android:name=".singleplayer" />
+        <activity android:name=".SinglePlayerGame" />
+        <activity android:name=".SeriesResult"></activity>
+    </application>
+
+</manifest>
